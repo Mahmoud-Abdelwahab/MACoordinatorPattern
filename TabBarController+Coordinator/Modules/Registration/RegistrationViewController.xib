@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="TabBarController_Coordinator" customModuleProvider="target">
+            <connections>
+                <outlet property="registrationLable" destination="1Il-zq-3eb" id="hWE-ZW-xcz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Il-zq-3eb">
+                    <rect key="frame" x="130" y="432" width="154" height="32.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljM-YO-Xr9">
+                    <rect key="frame" x="125" y="635" width="164" height="45"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Go To Tabbar"/>
+                    <connections>
+                        <action selector="didTapShowTabBar:" destination="-1" eventType="touchUpInside" id="Cnp-hV-Bqp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbW-Dh-S4b">
+                    <rect key="frame" x="137" y="521" width="130" height="45"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Go To Test"/>
+                    <connections>
+                        <action selector="didTapShowTest:" destination="-1" eventType="touchUpInside" id="pZ9-vT-rfy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1Il-zq-3eb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5eV-go-OJY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FbW-Dh-S4b" secondAttribute="trailing" constant="147" id="9hW-40-NR2"/>
+                <constraint firstItem="1Il-zq-3eb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ixe-y8-mLT"/>
+                <constraint firstItem="ljM-YO-Xr9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Qm6-b7-UxC"/>
+                <constraint firstItem="FbW-Dh-S4b" firstAttribute="top" secondItem="1Il-zq-3eb" secondAttribute="bottom" constant="56.5" id="diF-ZF-gDN"/>
+                <constraint firstItem="FbW-Dh-S4b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="137" id="jSO-5F-1Wn"/>
+                <constraint firstItem="ljM-YO-Xr9" firstAttribute="top" secondItem="1Il-zq-3eb" secondAttribute="bottom" constant="170.5" id="kok-9x-Awm"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="91"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
